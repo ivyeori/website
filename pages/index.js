@@ -1,9 +1,11 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './home';
-import ParticleBackground from './particlesBackground'
-export default function App() {
+import React from 'react'
+import Home from './home'
+import ParticlesBackground from './particlesBackground'
+
+function index() {
   return (
-      <><Home /><ParticleBackground /></>
-  );
+   <><Home /><ParticlesBackground /></>
+  )
 }
+
+export default index

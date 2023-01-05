@@ -47,7 +47,7 @@ function App() {
                 animation: {
                   enable: true,
                   minimumValue: 1,
-                  speed: 2,
+                  speed: 1.25,
                   sync: true,
                 },
                 random: {
