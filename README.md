@@ -1,32 +1,59 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+	<a href="#tech-stack">Tech Stack</a> •
+	<a href="#installation">Installation</a> •
+	<a href="#usage">Usage</a> • 
+	<a href="#contact">Contact</a> 
+</p>
 
-## Getting Started
+## Tech Stack
+<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/React-05122A?style=flat&logo=react" alt="react Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/-TailwindCSS-blue?style=flat&logo=tailwindcss" alt="react Badge" height="25">&nbsp;
 
-First, run the development server:
-
+## Requirements
+To install the requirements, follow the steps
 ```bash
-npm run dev
-# or
-yarn dev
+# Install nodejs v16
+
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Install npm
+
+sudo apt-get install -y npm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Installation
+To Install this project, follow the steps above:
+```bash
+# Clone the repository 
 
-## Learn More
+git clone https://github.com/Haloneva/Tiel24.git
 
-To learn more about Next.js, take a look at the following resources:
+# Install required npm packages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm i 
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
+To use this project, follow the steps above:
+```bash
+# Running
 
-# website
-# website
-# website
+npm run-script start
+
+# Build a stable version
+
+npm build
+```
+
+
+Made with ❤️ by [Alex](https://github.com/ivyeori), get in touch!
+
+<a href="mailto:mail@getalex.info" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email Badge" height="25"></a>&nbsp;
+
+<br clear="left"/>
