@@ -1,12 +1,9 @@
-import React from 'react'
-import ParticlesBackground from './components/particlesBackground'
-import Site from './site'
-
-
-function index() {
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './home';
+import ParticleBackground from './particlesBackground'
+export default function App() {
   return (
-    <><Site /><ParticlesBackground /></>
-  )
+      <><Home /><ParticleBackground /></>
+  );
 }
-
-export default index
