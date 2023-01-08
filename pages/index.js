@@ -4,7 +4,9 @@ import ParticlesBackground from './particlesBackground'
 
 function index() {
   return (
-   <><Home /><ParticlesBackground /></>
+   <>
+   
+   <Home /><ParticlesBackground /></>
   )
 }
 
