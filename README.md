@@ -32,7 +32,7 @@ To Install this project, follow the steps above:
 ```bash
 # Clone the repository 
 
-git clone https://github.com/Haloneva/Tiel24.git
+git clone https://github.com/ivyeori/website.git
 
 # Install required npm packages
 
