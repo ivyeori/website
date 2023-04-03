@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 function main() {
     useEffect(() => {
         document.title = "Ivyeori | Home Page";   }, []);
+
+          
   return (
     <>
     
