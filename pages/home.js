@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { useEffect } from 'react';
 
 function main() {
+     const songUrl = "https://example.com/song.mp3";
     useEffect(() => {
         document.title = "Ivyeori | Home Page";   }, []);
 
@@ -79,6 +80,7 @@ function main() {
                   </div>
               </div>
           </div>
+
       </main></>
 
   )

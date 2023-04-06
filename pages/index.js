@@ -1,15 +1,14 @@
 import React from 'react'
 import Home from './home'
-import Audio from './Audio'
-
 import ParticlesBackground from './particlesBackground'
-import Mac from './Mac'
+import MusicPlayer from './MusicPlayer'
+import MusicDesign from './MusicDesign'
 
 function index() {
   return (
    <>
    
-   <Home /><ParticlesBackground /><Mac/><Audio/></>
+   <MusicDesign/></>
   )
 }
 
