@@ -1,20 +1,34 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function main() {
     const audioRef = useRef(null);
-    
+    const [isPlaying, setIsPlaying] = useState(false);
     useEffect(() => {
         audioRef.current.play();
         audioRef.current.volume = 0.1;
       }, []);
     useEffect(() => {
         document.title = "Ivyeori | Home Page";   }, []);
+        const [isMuted, setIsMuted] = useState(false);
+       
+      
+        const handleMuteClick = () => {
+          setIsMuted(!isMuted);
+        };
 
+        const handlePlayClick = () => {
+            if (isPlaying) {
+              audioRef.current.pause();
+            } else {
+              audioRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+          };
           
   return (
-    <><audio ref={audioRef}>
+    <><audio ref={audioRef} muted={isMuted}>
     <source src="song2.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
@@ -22,6 +36,21 @@ function main() {
    
 
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script><script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script><main className="relative h-screen overflow-hidden font-mono bg-gradient-to-b from-slate-800 via-slate-900 to-slate-900 ">
+    <div className="absolute bottom-0 hidden md:block   right-0 w-96 h-96">
+              <div className="text-white bottom-0  absolute z-20 text-xl text-extrabold right-6  flex flex-col justify-end p-4 top-1/4">
+                 
+              <button className="underline" onClick={handlePlayClick}>{isPlaying ? 'Stop it. Not my type ' : 'Wanna play some tunes?'}</button>
+              <br/>
+                  <button  onClick={handleMuteClick}>
+                  {isMuted ? 'Unmute' : 'Mute'}
+                  </button>
+              </div>
+              
+          </div>
+
+          
+  
+          
           <div className="absolute hidden md:block -bottom-32 -left-32 w-96 h-96">
               <div className="absolute z-20 text-xl text-extrabold right-14 text-start top-1/4">
                   <span className="text-7xl">
