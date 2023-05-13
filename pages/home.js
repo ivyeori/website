@@ -7,7 +7,7 @@ function main() {
     const [isPlaying, setIsPlaying] = useState(false);
     useEffect(() => {
         audioRef.current.play();
-        audioRef.current.volume = 0.1;
+        audioRef.current.volume = 0.3;
       }, []);
     useEffect(() => {
         document.title = "Ivyeori | Home Page";   }, []);
