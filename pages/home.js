@@ -80,7 +80,7 @@ function main() {
           <div className="relative z-20 flex items-center">
               <div className="container relative flex flex-col items-center justify-between px-6 py-4 mx-auto">
                   <div className="flex flex-col">
-                      <img src="https://imgur.com/NX2Uo0R.jpg" className="mx-auto rounded-full w-28" />
+                      <img src="https://avatars.githubusercontent.com/u/80335182?v=4" className="mx-auto rounded-full w-28" />
                       <p className="my-6 text-3xl text-center text-white ">
                           Hi, I&#x27;m Alex
                       </p>
